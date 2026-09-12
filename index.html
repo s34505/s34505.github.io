@@ -3,43 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>มะปราง</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #9ae7fc;
-            color: #333;
-            text-align: center;
-            padding: 50px;
-        }
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 50px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            max-width: 500px;
-            margin: 0 auto;
-        }
-        h1 { color: #2c3e50; }
-        p { font-size: 18px; line-height: 1.6; }
-    </style>
+    <title>Portfolio | ชื่อของคุณ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <div class="card">
-        <h1>ยินดีต้อนรับสู่โปรไฟล์ของฉัน 👋</h1>
-        <p>สวัสดีค่ะ! ดิฉันชื่อ <strong>มะปราง (Maprang)</strong></p>
-        <p>ขณะนี้กำลังศึกษา/สนใจด้าน Chinese Program</p>
-        <p>นี่คือเว็บไซต์แรกของดิฉันที่โฮสต์บน GitHub Pages!</p>
-        
-   <a href="portfolio.html" 
-       style="display:inline-block;
-       background:#3498db;
-       color:white;
-       padding:10px 20px;
-       text-decoration:none;
-       border-radius:5px; 
-       margin-top:15px;">👉 ดูแฟ้มสะสมงานของมะปรางเอ้ยมะปี๊ด</a>
+<header class="navbar">
+    <a href="index.html" class="logo">MY<span>PORTFOLIO</span></a>
 
+    <button class="menu-btn">☰</button>
+
+    <nav>
+        <a href="index.html" class="active">หน้าหลัก</a>
+        <a href="profile.html">ประวัติ</a>
+        <a href="education.html">การศึกษา</a>
+        <a href="activities.html">กิจกรรม</a>
+        <a href="projects.html">ผลงาน</a>
+        <a href="certificates.html">เกียรติบัตร</a>
+        <a href="skills.html">ทักษะ</a>
+        <a href="goals.html">เป้าหมาย</a>
+        <a href="contact.html">ติดต่อ</a>
+    </nav>
+</header>
+
+<main>
+
+<section class="hero">
+    <div class="hero-text reveal">
+        <p class="small-title">WELCOME TO MY PORTFOLIO</p>
+
+        <h1>
+            PORT<br>
+            <span>FOLIO</span>
+        </h1>
+
+        <p class="hero-description">
+            แฟ้มสะสมผลงานสำหรับการสมัครเข้าศึกษาต่อระดับมหาวิทยาลัย
+        </p>
+
+        <div class="hero-info">
+            <h2>ชื่อ - นามสกุล</h2>
+            <p>นักเรียนชั้นมัธยมศึกษาปีที่ 6</p>
+            <p>คณะที่ต้องการสมัคร : คณะ / สาขา</p>
+        </div>
+
+        <a href="profile.html" class="btn">รู้จักฉันมากขึ้น →</a>
+    </div>
+
+    <div class="hero-image reveal">
+        <div class="image-frame">
+            <img src="images/profile.jpg" alt="รูปโปรไฟล์">
+        </div>
+
+        <div class="circle-text">
+            ✦ DREAM ✦ LEARN ✦ CREATE ✦
+        </div>
+    </div>
+</section>
+
+<section class="quote-section reveal">
+    <p>“ความสำเร็จไม่ได้เกิดจากการรอคอย แต่เกิดจากการลงมือทำ”</p>
+</section>
+
+<section class="quick-section">
+    <div class="section-title reveal">
+        <p>EXPLORE MY PORTFOLIO</p>
+        <h2>เรื่องราวของฉัน</h2>
+    </div>
+
+    <div class="card-grid">
+
+        <a href="profile.html" class="menu-card reveal">
+            <span>01</span>
+            <h3>Profile</h3>
+            <p>ประวัติและตัวตนของฉัน</p>
+        </a>
+
+        <a href="education.html" class="menu-card reveal">
+            <span>02</span>
+            <h3>Education</h3>
+            <p>เส้นทางการศึกษา</p>
+        </a>
+
+        <a href="activities.html" class="menu-card reveal">
+            <span>03</span>
+            <h3>Activities</h3>
+            <p>กิจกรรมและประสบการณ์</p>
+        </a>
+
+        <a href="projects.html" class="menu-card reveal">
+            <span>04</span>
+            <h3>Projects</h3>
+            <p>ผลงานที่ภาคภูมิใจ</p>
+        </a>
+
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 My Portfolio | University Admission</p>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
